@@ -1,0 +1,11 @@
+[topo]
+below = "traces"
+sourcetype = "raster"
+source = ["https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"]
+
+[satellite]
+below = "traces"
+sourcetype = "raster"
+source = [
+    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+]

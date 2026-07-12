@@ -1,0 +1,92 @@
+body {
+    background-color: #f8fafc;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+.page-title {
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.page-subtitle {
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.card {
+    border: none !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.upload-box {
+    height: 160px;
+    border: 2px dashed #94a3b8;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.upload-box:hover {
+    border-color: #2563eb;
+    background-color: #eff6ff;
+}
+
+.upload-icon {
+    font-size: 38px;
+}
+
+.upload-link {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.status-message {
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* assets/style.css */
+
+.sidebar {
+    min-height: calc(100vh - 100px);
+}
+
+.map-card {
+    height: calc(100vh - 100px);
+}
+
+.upload-box {
+    height: 140px;
+    border: 2px dashed #94a3b8;
+    border-radius: 12px;
+    background-color: #f8fafc;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.upload-box:hover {
+    border-color: #2563eb;
+    background-color: #eff6ff;
+}
+
+.upload-icon {
+    font-size: 36px;
+}
+
+.upload-link {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.status-message {
+    margin-top: 12px;
+    font-weight: 600;
+}

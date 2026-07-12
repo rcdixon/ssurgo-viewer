@@ -1,0 +1,25 @@
+[ssurgo]
+query = """
+SELECT 
+    mapunit.mukey, 
+    component.cokey, 
+    component.compname, 
+    chorizon.chkey, 
+    chorizon.hzname, 
+    chorizon.hzdept_r, 
+    chorizon.hzdepb_r, 
+    chorizon.sandtotal_r as pct_sand, 
+    chorizon.claytotal_r as pct_clay,
+    chorizon.silttotal_r as pct_silt,
+    chorizon.om_r as organic_matter_pct,
+    chorizon.cec7_r as cec,
+    chorizon.ph1to1h2o_r as pH,
+    (1 - chorizon.dbthirdbar_r / 2.65) AS porosity
+FROM mapunit
+JOIN component ON component.mukey = mapunit.mukey
+JOIN chorizon ON chorizon.cokey = component.cokey
+WHERE mapunit.mukey IN (<MUKEY>)
+ORDER BY component.cokey, chorizon.hzdept_r ASC
+"""
+
+replace = "<MUKEY>"
